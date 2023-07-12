@@ -1,0 +1,17 @@
+@use './reset.scss' as *;
+
+// 滚动条设置
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  width: 6px;
+  border-radius: 6px;
+}
