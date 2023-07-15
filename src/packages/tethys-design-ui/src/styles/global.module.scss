@@ -1,0 +1,9 @@
+@use './variable.scss' as *;
+
+:export {
+  th-default-color: $th-default-color;
+  th-primary-color: $th-primary-color;
+  th-success-color: $th-success-color;
+  th-warning-color: $th-warning-color;
+  th-danger-color: $th-danger-color;
+}

@@ -1,0 +1,145 @@
+Button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.th-btn {
+  color: #ffffff;
+  height: 32px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* 按钮类型 */
+.th-btn.th-default-btn {
+  background-color: $th-default-color;
+}
+
+.th-btn.th-primary-btn {
+  background-color: $th-primary-color;
+}
+
+.th-btn.th-success-btn {
+  background-color: $th-success-color;
+}
+
+.th-btn.th-warning-btn {
+  background-color: $th-warning-color;
+}
+
+.th-btn.th-danger-btn {
+  background-color: $th-danger-color;
+}
+
+.th-btn.th-mimicry-btn {
+  box-shadow:
+    5px 5px 10px rgba(121, 130, 160, 0.55),
+    -5px -5px 10px rgb(255, 255, 255);
+  background-color: #ebecf0;
+  color: $th-text-color;
+  &:active {
+    box-shadow:
+      0 0 0 rgba(0, 0, 0, 0),
+      0 0 0 rgba(0, 0, 0, 0),
+      inset 5px 5px 10px rgba(121, 130, 160, 0.55),
+      inset -5px -5px 10px rgb(255, 255, 255);
+  }
+}
+
+/* 按钮镂空 */
+.th-btn.th-default-btn.plain {
+  background-color: transparent;
+  border: 1px solid $th-default-color;
+  color: $th-default-color;
+}
+
+.th-btn.th-primary-btn.plain {
+  background-color: transparent;
+  border: 1px solid $th-primary-color;
+  color: $th-primary-color;
+}
+
+.th-btn.th-success-btn.plain {
+  background-color: transparent;
+  border: 1px solid $th-success-color;
+  color: $th-success-color;
+}
+
+.th-btn.th-warning-btn.plain {
+  background-color: transparent;
+  border: 1px solid $th-warning-color;
+  color: $th-warning-color;
+}
+
+.th-btn.th-danger-btn.plain {
+  background-color: transparent;
+  border: 1px solid $th-danger-color;
+  color: $th-default-color;
+}
+
+/* 按钮大小 */
+.th-btn.th-small-btn {
+  height: 24px;
+  font-size: 12px;
+}
+
+.th-btn.th-large-btn {
+  height: 40px;
+}
+
+/* 按钮圆角 */
+.th-btn.radius {
+  border-radius: 8px;
+}
+
+/* 按钮圆形 */
+.th-btn.th-small-btn.circle {
+  border-radius: 12px;
+}
+.th-btn.circle {
+  border-radius: 18px;
+}
+.th-btn.th-large-btn.circle {
+  border-radius: 20px;
+}
+
+.th-btn.loading {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.is-loading {
+  animation: rotating 1s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 按钮禁用 */
+.th-btn.disabled {
+  cursor: no-drop;
+  background-color: $th-disabled-bg-color;
+  color: #d9d9d9;
+  border: 1px solid $th-disabled-border-color;
+}
+
+.th-btn.th-mimicry-btn.disabled {
+  &:active {
+    box-shadow:
+      5px 5px 10px rgba(121, 130, 160, 0.55),
+      -5px -5px 10px rgb(255, 255, 255);
+  }
+}

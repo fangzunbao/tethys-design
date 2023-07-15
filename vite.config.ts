@@ -25,7 +25,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         javascriptEnabled: true,
-        additionalData: `@use "@/styles/variable.scss" as *;`,
+        additionalData: `@use "@/packages/tethys-design-ui/src/styles/variable.scss" as *;`,
       },
     },
   },
